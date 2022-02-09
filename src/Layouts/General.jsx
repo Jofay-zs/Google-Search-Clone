@@ -9,7 +9,7 @@ const General = () => {
 
   return (
     <div className={`${isTheme ? "dark" : ""} `}>
-      <div className="">
+      <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 h-auto min-h-screen w-screen max-w-screen min-w-screen">
         <Navbar />
         <Outlet />
         <Footer />
