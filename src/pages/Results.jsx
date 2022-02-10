@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 const Results = () => {
   const location = useLocation();
-  return <div>{location.pathname}</div>;
+  return <main className="">{location.pathname}</main>;
 };
 
 export default Results;

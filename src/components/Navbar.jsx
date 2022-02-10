@@ -19,7 +19,7 @@ const Navbar = () => {
           onClick={() => {
             setIsTheme(!isTheme);
           }}
-          className="w-12 h-12 text-3xl rounded-full hover:bg-gray-100 hover:dark:bg-gray-900"
+          className="w-12 h-12 text-3xl rounded-full hover:bg-gray-100 hover:dark:bg-gray-900 animate-bounce dark:animate-pulse"
         >
           {isTheme ? "🌚" : "🌞"}
         </button>
