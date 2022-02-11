@@ -10,6 +10,7 @@ const Navbar = () => {
           <input
             type="text"
             className="bg-transparent focus:border-none border-none outline-none font-bold text-lg w-full"
+            placeholder="What are you looking for?"
           />
           <button className="text-xl mr-1">🔎</button>
         </div>
@@ -19,7 +20,7 @@ const Navbar = () => {
           onClick={() => {
             setIsTheme(!isTheme);
           }}
-          className="w-12 h-12 text-3xl rounded-full hover:bg-gray-100 hover:dark:bg-gray-900 animate-bounce dark:animate-pulse"
+          className="text-3xl rounded-full animate-bounce dark:animate-pulse"
         >
           {isTheme ? "🌚" : "🌞"}
         </button>
