@@ -10,6 +10,7 @@ const Footer = () => {
             <a
               className="hover:text-gray-500"
               href="https://github.com/Jofay-zs/Google-Search-Clone"
+              target="_blank"
             >
               Project's code
             </a>
@@ -18,6 +19,7 @@ const Footer = () => {
             <a
               className="hover:text-gray-500"
               href="https://jofay-zs.netlify.app/"
+              target="_blank"
             >
               Creator
             </a>
@@ -26,6 +28,7 @@ const Footer = () => {
             <a
               className="hover:text-gray-500"
               href="https://rapidapi.com/apigeek/api/google-search3?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel"
+              target="_blank"
             >
               Google Search API
             </a>
