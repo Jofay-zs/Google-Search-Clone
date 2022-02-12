@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useTheme } from "../context/Theme";
 
 const Navbar = () => {
@@ -26,18 +27,30 @@ const Navbar = () => {
         </button>
       </section>
       <section className="col-span-4 lg:col-span-3 sm:col-span-4 flex justify-around mt-1">
-        <button className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100">
+        <Link
+          to="/"
+          className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100"
+        >
           All🔎
-        </button>
-        <button className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100">
+        </Link>
+        <Link
+          to="/images"
+          className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100"
+        >
           Images🖼️
-        </button>
-        <button className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100">
+        </Link>
+        <Link
+          to="/videos"
+          className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100"
+        >
           Videos📺
-        </button>
-        <button className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100">
+        </Link>
+        <Link
+          to="/news"
+          className="font-bold hover:border-b-2 border-gray-900 dark:border-gray-100"
+        >
           News📰
-        </button>
+        </Link>
       </section>
     </nav>
   );
