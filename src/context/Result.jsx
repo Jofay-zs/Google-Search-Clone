@@ -14,6 +14,7 @@ export const ResultContextProvider = ({ children }) => {
     const response = await fetch(`${baseUrl}${type}`, {
       method: "GET",
       headers: {
+        "x-proxy-location": "US",
         "x-rapidapi-host": "google-search3.p.rapidapi.com",
         "x-rapidapi-key": process.env.REACT_APP_API_KEY,
       },
