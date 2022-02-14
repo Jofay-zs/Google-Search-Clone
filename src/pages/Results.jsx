@@ -26,6 +26,7 @@ const Results = () => {
         getResults(`/images/q=${searchTerm}`);
       }
     }
+    // eslint-disable-next-line
   }, [searchTerm, location.pathname]);
 
   if (isLoading) return <Loading />;
@@ -58,7 +59,7 @@ const Results = () => {
         <section className="flex flex-wrap justify-center items-center pr-20">
           {image_results?.map(({ image, link: { href, title } }, index) => (
             <a href={href} rel="noreferrer" className="p-5 sm:p-3" key={index}>
-              <img src={image?.src} alt={image?.alt} />
+              <img src={image?.src} alt={title} />
               <h6 className="w-36 mt-2 text-sm break-words">{title}</h6>
             </a>
           ))}

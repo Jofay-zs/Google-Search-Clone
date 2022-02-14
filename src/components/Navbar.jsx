@@ -11,7 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (debouncedValue) setSearchTerm(debouncedValue);
-  }, [debouncedValue]);
+  }, [debouncedValue, setSearchTerm]);
 
   return (
     <nav className="w-full pt-5 pb-2 items-center bg-gray-200 dark:bg-gray-800 px-5 sm:px-20 grid grid-cols-5">
